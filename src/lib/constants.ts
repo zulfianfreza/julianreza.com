@@ -1,5 +1,5 @@
 import { IMenu, ISocial } from "@/@types";
-import { AnimationProps, Transition } from "framer-motion";
+import { Transition } from "framer-motion";
 import { Archivo, Heebo, Inter } from "next/font/google";
 import {
   SiFacebook,
@@ -81,5 +81,3 @@ export const transition: Transition = {
   damping: 50,
   restDelta: 0.001,
 };
-export const initial: AnimationProps["initial"] = { y: 100, opacity: 0 };
-export const animate: AnimationProps["animate"] = { y: 0, opacity: 1 };

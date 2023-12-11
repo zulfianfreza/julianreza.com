@@ -10,8 +10,8 @@ export default function MotionContainer({
 }) {
   return (
     <motion.div
-      initial={initial}
-      animate={animate}
+      initial={{ opacity: 0, y: 24 }}
+      animate={{ opacity: 1, y: 0 }}
       transition={{
         ...transition,
         delay: 0.5,

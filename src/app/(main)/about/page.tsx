@@ -1,11 +1,13 @@
+import Educations from "@/components/about/educations";
+import Skills from "@/components/about/skills";
 import Container from "@/components/container";
 import MotionContainer from "@/components/motion-container";
 import { archivo } from "@/lib/constants";
 import { cn } from "@/lib/utils";
 import { Metadata } from "next";
 import Image from "next/image";
-import React from "react";
-import { GoArrowDownLeft, GoArrowRight } from "react-icons/go";
+import Link from "next/link";
+import { GoArrowDownLeft } from "react-icons/go";
 
 export const metadata: Metadata = {
   title: "About - Julian Reza",
@@ -53,56 +55,27 @@ export default function AboutPage() {
           </div>
         </div>
 
-        <div className=" mx-auto mt-16 max-w-2xl">
-          <p>
-            Fullstack sorcerer conjuring code magic for captivating digital
-            experiences. Passionate about crafting seamless interfaces and
-            powerful backend to shape the digital frontier. Proficient in modern
-            framework and libraries like React.js, Next.js, TypeScript, Tailwind
-            CSS, Golang, Flutter, and more.
-          </p>
-
-          <div className=" mt-16">
-            <h1 className=" text-lg font-medium">Educations</h1>
+        <div className="mt-8 flex flex-col gap-24 lg:flex-row">
+          <div className=" flex-1">
             <p>
-              I&apos;m graduated from University of Computer Indonesia with a
-              Bachelor in Informatics Engineering.
+              Fullstack sorcerer conjuring code magic for captivating digital
+              experiences. Passionate about crafting seamless interfaces and
+              powerful backend to shape the digital frontier. Proficient in
+              modern framework and libraries like React.js, Next.js, TypeScript,
+              Tailwind CSS, Golang, Flutter, and more.
             </p>
+
+            <Educations />
+            <Skills />
           </div>
-
-          <div className=" mt-16">
-            <h1 className=" text-lg font-medium">Skills</h1>
-            <div className="mt-4 flex flex-col gap-4">
-              <div className=" grid grid-cols-12 gap-8">
-                <div className=" col-span-4 flex justify-start">
-                  <p>Programming Languages</p>
-                </div>
-                <div className=" col-span-8">
-                  <p>JavaScript, TypeScript, Dart, Golang, PHP</p>
-                </div>
-              </div>
-
-              <div className=" grid grid-cols-12 gap-8">
-                <div className=" col-span-4 flex justify-start">
-                  <p>Framework and Libraries</p>
-                </div>
-                <div className=" col-span-8">
-                  <p className=" leading-relaxed">
-                    React.js, Next.js, Express, MongoDB, MySQL, PostgreSQL,
-                    React Query, Redux Toolkit, Zustand, Prisma, Drizzle ORM,
-                    Tailwind CSS, Bootstrap, Flutter, BLoC, Gin, Gorm, and
-                    others.
-                  </p>
-                </div>
-              </div>
-              <div className=" grid grid-cols-12 gap-8">
-                <div className=" col-span-4 flex justify-start">
-                  <p>API</p>
-                </div>
-                <div className=" col-span-8">
-                  <p>REST, tRPC</p>
-                </div>
-              </div>
+          <div className=" w-96">
+            <div className="flex flex-col">
+              <p>
+                Github: <Link href="">https://github.com/zulfianfreza</Link>
+              </p>
+              <p>
+                Website: <Link href="">https://julianreza.com/</Link>
+              </p>
             </div>
           </div>
         </div>

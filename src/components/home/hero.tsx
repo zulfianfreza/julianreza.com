@@ -19,7 +19,7 @@ export default function Hero() {
             key={i}
             className=" group relative flex items-center justify-center overflow-hidden"
           >
-            <social.icon className=" w-4 lg:w-5" />
+            <social.icon className=" h-4 w-4 lg:h-5 lg:w-5" />
             {/* <social.icon
               size={20}
               className="transition-all duration-500 group-hover:-translate-y-4 group-hover:opacity-0"

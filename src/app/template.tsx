@@ -29,14 +29,14 @@ export default function Template({ children }: { children: React.ReactNode }) {
           initial={{ scaleY: 0 }}
           animate={{ scaleY: 0 }}
           exit={{ scaleY: 1 }}
-          transition={{ duration: 1, ease: [0.22, 1, 0.36, 1] }}
+          transition={{ duration: 0.75, ease: [0.22, 1, 0.36, 1] }}
         ></motion.div>
         <motion.div
           className=" fixed left-0 top-0 z-[999] flex h-screen w-full origin-top items-center justify-center bg-black dark:bg-white"
           initial={{ scaleY: 1 }}
           animate={{ scaleY: 0 }}
           exit={{ scaleY: 0 }}
-          transition={{ duration: 1, ease: [0.22, 1, 0.36, 1] }}
+          transition={{ duration: 0.75, ease: [0.22, 1, 0.66, 1] }}
         ></motion.div>
       </motion.div>
     </AnimatePresence>
