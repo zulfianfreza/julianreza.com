@@ -1,6 +1,6 @@
 "use client";
 
-import { animate, initial, transition } from "@/lib/constants";
+import { transition } from "@/lib/constants";
 import { motion } from "framer-motion";
 
 export default function MotionContainer({
