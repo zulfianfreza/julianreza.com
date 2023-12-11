@@ -14,7 +14,8 @@ export default function Template({ children }: { children: React.ReactNode }) {
   const { onClose } = useMenuOpen();
   useEffect(() => {
     onClose();
-  }, [pathname, onClose]);
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [pathname]);
   return (
     <AnimatePresence mode="wait">
       <motion.div key={pathname}>
