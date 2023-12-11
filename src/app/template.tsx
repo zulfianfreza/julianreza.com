@@ -12,8 +12,12 @@ const variants = {
 export default function Template({ children }: { children: React.ReactNode }) {
   const pathname = usePathname();
   const { onClose } = useMenuOpen();
-  useEffect(() => {
+  const clear = () => {
     onClose();
+    document.body.style.overflow = "";
+  };
+  useEffect(() => {
+    clear();
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [pathname]);
   return (

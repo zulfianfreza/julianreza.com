@@ -4,7 +4,6 @@ import useMenuOpen from "@/hooks/use-menu-open";
 import { MENU } from "@/lib/constants";
 import { cn } from "@/lib/utils";
 import Link from "next/link";
-import React, { useState } from "react";
 
 export default function Nav() {
   const { isOpen, onClose, onOpen } = useMenuOpen();
@@ -18,6 +17,7 @@ export default function Nav() {
       document.body.style.overflow = "hidden";
     }
   };
+
   return (
     <>
       <nav className="hidden items-center gap-8 lg:flex">
