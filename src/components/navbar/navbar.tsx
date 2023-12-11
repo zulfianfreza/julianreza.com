@@ -1,6 +1,5 @@
 "use client";
 
-import { Element } from "react-scroll";
 import Container from "../container";
 import Logo from "../logo";
 import MobileNav from "./mobile-nav";

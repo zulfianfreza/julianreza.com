@@ -15,7 +15,7 @@ export default function Footer() {
   return (
     <Container className=" mt-16">
       <div className="flex items-start justify-between">
-        <div className="flex gap-20">
+        <div className="flex gap-10 lg:gap-20">
           <div className="flex flex-col">
             <h1 className={cn("text-lg font-medium")}>Sitemap</h1>
             <div className="mt-4 flex flex-col gap-1.5">

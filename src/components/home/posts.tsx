@@ -1,3 +1,5 @@
+"use client";
+
 import { IPost } from "@/@types";
 import { cn } from "@/lib/utils";
 import { GoArrowDownLeft, GoArrowRight } from "react-icons/go";

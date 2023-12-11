@@ -11,13 +11,13 @@ import Container from "../container";
 export default function Hero() {
   const { x, y } = useMousePosition();
   return (
-    <Container className=" relative flex min-h-screen w-full flex-col items-center justify-center">
-      <div className="absolute bottom-6 right-6 flex flex-col items-center gap-2.5 lg:bottom-10 lg:right-10 ">
+    <Container className=" relative flex min-h-[100dvh] w-full flex-col items-center justify-center">
+      <div className="absolute bottom-6 right-6 flex flex-col items-center gap-4 lg:bottom-10 lg:right-10 ">
         {SOCIAL_LIST.filter((social) => social.isPinned).map((social, i) => (
           <Link
             href={social.url}
             key={i}
-            className=" group relative flex h-7 items-center justify-center overflow-hidden"
+            className=" group relative flex items-center justify-center overflow-hidden"
           >
             <social.icon className=" w-4 lg:w-5" />
             {/* <social.icon
@@ -44,7 +44,7 @@ export default function Hero() {
         <div className=" flex w-full flex-col items-start">
           <h1
             className={cn(
-              "  text-[112px] font-medium leading-none tracking-tight md:text-[124px] lg:text-[156px] xl:text-[216px] ",
+              "  text-[72px] font-medium leading-none tracking-tight md:text-[112px] lg:text-[156px] xl:text-[216px] ",
               archivo.className,
             )}
           >
