@@ -12,15 +12,9 @@ export default function Nav() {
     if (isOpen) {
       onClose();
       document.body.style.overflow = "";
-      document.body.style.position = "";
-      document.documentElement.style.overflow = "";
-      document.documentElement.style.position = "";
     } else {
       onOpen();
       document.body.style.overflow = "hidden";
-      document.body.style.position = "relative";
-      document.documentElement.style.overflow = "hidden";
-      document.documentElement.style.position = "relative";
     }
   };
 
