@@ -70,7 +70,7 @@ export default function ProjectItem({
         <Link
           href={`/projects/${project.slug}`}
           className={cn(
-            " group relative mt-4 line-clamp-2 flex gap-[4px] text-[24px] font-semibold leading-none lg:text-[36px] xl:text-[48px]",
+            "  mt-4 line-clamp-2 flex gap-[4px] text-[20px] font-medium leading-none lg:text-[28px] xl:text-[36px]",
             archivo.className,
           )}
         >

@@ -12,7 +12,7 @@ export default function Hero() {
   const { x, y } = useMousePosition();
   return (
     <Container className=" relative flex min-h-[100dvh] w-full flex-col items-center justify-center">
-      <div className="absolute bottom-6 right-6 flex flex-col items-center gap-4 lg:bottom-10 lg:right-10 ">
+      <div className="absolute bottom-24 right-6 flex flex-col items-center gap-4 lg:right-10 ">
         {SOCIAL_LIST.filter((social) => social.isPinned).map((social, i) => (
           <Link
             href={social.url}
@@ -44,7 +44,7 @@ export default function Hero() {
         <div className=" flex w-full flex-col items-start">
           <h1
             className={cn(
-              "  text-[72px] font-medium leading-none tracking-tight md:text-[112px] lg:text-[156px] xl:text-[216px] ",
+              "  text-[72px] font-medium leading-none tracking-tight md:text-[112px] lg:text-[156px] xl:text-[196px] ",
               archivo.className,
             )}
           >

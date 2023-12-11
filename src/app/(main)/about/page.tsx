@@ -55,9 +55,16 @@ export default function AboutPage() {
           </div>
         </div>
 
-        <div className="mt-8 flex flex-col gap-24 lg:flex-row">
+        <div className="mt-8 flex items-center gap-2">
+          <div className="relative aspect-square w-3">
+            <div className=" absolute aspect-square w-3 animate-ping rounded-full bg-green-500"></div>
+            <div className=" absolute left-1/2 top-1/2 aspect-square w-2 -translate-x-1/2 -translate-y-1/2 rounded-full bg-green-500"></div>
+          </div>
+          <p className=" text-green-500">Available for work</p>
+        </div>
+        <div className="mt-2 flex flex-col gap-24 lg:flex-row">
           <div className=" flex-1">
-            <p>
+            <p className=" leading-relaxed">
               Fullstack sorcerer conjuring code magic for captivating digital
               experiences. Passionate about crafting seamless interfaces and
               powerful backend to shape the digital frontier. Proficient in
@@ -69,7 +76,7 @@ export default function AboutPage() {
             <Skills />
           </div>
           <div className=" w-96">
-            <div className="flex flex-col">
+            <div className="flex flex-col leading-relaxed">
               <p>
                 Github: <Link href="">https://github.com/zulfianfreza</Link>
               </p>

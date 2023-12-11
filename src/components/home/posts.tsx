@@ -5,6 +5,7 @@ import { cn } from "@/lib/utils";
 import { GoArrowDownLeft, GoArrowRight } from "react-icons/go";
 import Container from "../container";
 import PostItem from "../post-item";
+import { archivo } from "@/lib/constants";
 
 interface PostsProps {
   posts: IPost[];
@@ -17,6 +18,7 @@ export default function Posts({ posts }: PostsProps) {
         <h1
           className={cn(
             "text-[56px] font-medium leading-none tracking-tight md:text-[96px] lg:text-[156px]",
+            archivo.className,
           )}
         >
           Latest <br className=" hidden lg:block" />
@@ -31,7 +33,7 @@ export default function Posts({ posts }: PostsProps) {
         </div>
       </div>
 
-      <div className=" mt-8 grid grid-cols-1 gap-8 md:grid-cols-2 lg:grid-cols-3">
+      <div className=" mt-8 grid grid-cols-1 gap-8 md:grid-cols-1 lg:grid-cols-3">
         {posts
           .filter((post) => post.isPinned)
           .map((post, i) => (

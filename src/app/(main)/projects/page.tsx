@@ -47,10 +47,6 @@ export default function ProjectsPage() {
             </h1>
           </div>
           <div className="mt-2 flex flex-col items-start gap-4 lg:mt-0">
-            {/* <p className="">
-              Have a look at some of <br className=" hidden lg:block" /> the
-              projects i&apos;ve worked on.
-            </p> */}
             <p>
               Tech Tales: A Journey <br className=" hidden lg:block" /> Through
               My Project Showcase.

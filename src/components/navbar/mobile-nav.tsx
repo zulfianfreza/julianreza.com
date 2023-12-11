@@ -1,7 +1,8 @@
 "use client";
 
 import useMenuOpen from "@/hooks/use-menu-open";
-import { MENU } from "@/lib/constants";
+import { MENU, archivo } from "@/lib/constants";
+import { cn } from "@/lib/utils";
 import { AnimatePresence, Variants, motion } from "framer-motion";
 import Link from "next/link";
 
@@ -79,8 +80,10 @@ export default function MobileNav() {
                 <motion.div variants={mobileLinkVars}>
                   <Link
                     href={menu.path}
-                    className=" text-white"
-                    // onClick={onClose}
+                    className={cn(
+                      " group relative text-[36px] leading-tight text-white",
+                      archivo.className,
+                    )}
                   >
                     {menu.title}
                   </Link>
