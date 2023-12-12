@@ -5,8 +5,6 @@ import { archivo } from "@/lib/constants";
 import { cn } from "@/lib/utils";
 import Image from "next/image";
 import Link from "next/link";
-import React from "react";
-import { GoArrowUpRight } from "react-icons/go";
 
 interface ProjectItemProps {
   project: IProject;
@@ -70,13 +68,13 @@ export default function ProjectItem({
         <Link
           href={`/projects/${project.slug}`}
           className={cn(
-            "  mt-4 line-clamp-2 flex gap-[4px] text-[20px] font-medium leading-none lg:text-[28px] xl:text-[36px]",
+            "  mt-2 line-clamp-2 flex gap-[4px] text-[20px] font-medium leading-snug lg:text-[28px] xl:text-[36px]",
             archivo.className,
           )}
         >
           {project.title}
         </Link>
-        <p className=" mt-2 line-clamp-2">{project.summary}</p>
+        <p className=" mt-1 line-clamp-2">{project.summary}</p>
       </div>
     </div>
   );

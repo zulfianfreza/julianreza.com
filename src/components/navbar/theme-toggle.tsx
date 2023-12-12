@@ -1,7 +1,6 @@
 "use client";
 import { cn } from "@/lib/utils";
 import { useTheme } from "next-themes";
-import React from "react";
 
 export default function ThemeToggle() {
   const { theme, setTheme } = useTheme();

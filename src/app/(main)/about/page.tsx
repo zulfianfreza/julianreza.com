@@ -1,5 +1,6 @@
 import Educations from "@/components/about/educations";
 import Skills from "@/components/about/skills";
+import Summary from "@/components/about/summary";
 import Container from "@/components/container";
 import MotionContainer from "@/components/motion-container";
 import { archivo } from "@/lib/constants";
@@ -62,28 +63,39 @@ export default function AboutPage() {
           </div>
           <p className=" text-green-500">Available for work</p>
         </div>
-        <div className="mt-2 flex flex-col gap-24 lg:flex-row">
+        <div className="mt-2 flex flex-col gap-0 lg:flex-row lg:gap-24">
           <div className=" flex-1">
-            <p className=" leading-relaxed">
-              Fullstack sorcerer conjuring code magic for captivating digital
-              experiences. Passionate about crafting seamless interfaces and
-              powerful backend to shape the digital frontier. Proficient in
-              modern framework and libraries like React.js, Next.js, TypeScript,
-              Tailwind CSS, Golang, Flutter, and more.
-            </p>
-
+            <Summary />
             <Educations />
             <Skills />
           </div>
           <div className=" w-96">
-            <div className="flex flex-col leading-relaxed">
+            {/* <div className="flex flex-col leading-relaxed">
               <p>
-                Github: <Link href="">https://github.com/zulfianfreza</Link>
+                Github:{" "}
+                <Link
+                  href="https://github.com/zulfianfreza"
+                  className=" font-medium"
+                >
+                  https://github.com/zulfianfreza
+                </Link>
               </p>
               <p>
-                Website: <Link href="">https://julianreza.com/</Link>
+                Website:{" "}
+                <Link href="https://julianreza.com" className=" font-medium">
+                  https://julianreza.com/
+                </Link>
               </p>
-            </div>
+              <p>
+                Linkedin:{" "}
+                <Link
+                  href="https://www.linkedin.com/in/zulfian-fachru-reza/"
+                  className=" font-medium"
+                >
+                  https://www.linkedin.com/in/zulfian-fachru-reza/
+                </Link>
+              </p>
+            </div> */}
           </div>
         </div>
       </MotionContainer>

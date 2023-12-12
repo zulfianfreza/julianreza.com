@@ -1,7 +1,7 @@
 import Container from "@/components/container";
 import MDXContent from "@/components/mdx-content";
 import { archivo } from "@/lib/constants";
-import { cn } from "@/lib/utils";
+import { cn, getReadingTime } from "@/lib/utils";
 import { getPostBySlug } from "@/services/post";
 import { serialize } from "next-mdx-remote/serialize";
 import Image from "next/image";
@@ -11,6 +11,7 @@ import rehypeSlug from "rehype-slug";
 import "highlight.js/styles/atom-one-dark.min.css";
 import { Metadata } from "next";
 import MotionContainer from "@/components/motion-container";
+import { format } from "date-fns";
 
 interface PostPageParams {
   params: { slug: string };
@@ -42,11 +43,22 @@ export default async function PostPage({ params }: PostPageParams) {
         <h1
           className={cn(
             archivo.className,
-            "text-[56px] font-medium leading-tight",
+            "text-[24px] font-medium leading-snug tracking-tight lg:text-[36px]",
           )}
         >
           {post.title}
         </h1>
+
+        <div className=" mt-1 flex items-center gap-2">
+          <p className=" text-sm">
+            {format(
+              post?.date ? new Date(post?.date) : new Date(),
+              "dd MMM, yyyy",
+            )}
+          </p>
+          <p>•</p>
+          <p className=" text-sm">{getReadingTime(post.content)} min</p>
+        </div>
 
         <div
           className=" relative mt-4 aspect-[16/10] w-full  overflow-hidden rounded-xl  bg-neutral-800 p-10 "

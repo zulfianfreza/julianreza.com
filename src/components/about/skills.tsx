@@ -7,18 +7,18 @@ export default function Skills() {
     <div className=" mt-8">
       <h1 className=" text-lg font-medium">Skills</h1>
       <div className="flex flex-col gap-2">
-        <div className=" grid grid-cols-12 gap-8">
+        <div className=" grid grid-cols-1 lg:grid-cols-12 lg:gap-8">
           <div className=" col-span-3 flex justify-start lg:col-span-4">
-            <p>Programming Languages</p>
+            <p className=" font-medium">Programming Languages</p>
           </div>
           <div className=" col-span-9 lg:col-span-8">
             <p>JavaScript, TypeScript, Dart, Golang, PHP</p>
           </div>
         </div>
 
-        <div className=" grid grid-cols-12 gap-8">
+        <div className=" grid grid-cols-1 lg:grid-cols-12 lg:gap-8">
           <div className=" col-span-3 flex justify-start lg:col-span-4">
-            <p>Framework and Libraries</p>
+            <p className=" font-medium">Framework and Libraries</p>
           </div>
           <div className=" col-span-9 lg:col-span-8">
             <p className=" leading-relaxed">
@@ -28,9 +28,9 @@ export default function Skills() {
             </p>
           </div>
         </div>
-        <div className=" grid grid-cols-12 gap-8">
+        <div className=" grid grid-cols-1 lg:grid-cols-12 lg:gap-8">
           <div className=" col-span-3 flex justify-start lg:col-span-4">
-            <p>API</p>
+            <p className=" font-medium">API</p>
           </div>
           <div className=" col-span-9 lg:col-span-8">
             <p>REST, tRPC</p>

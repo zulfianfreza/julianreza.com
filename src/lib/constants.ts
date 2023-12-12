@@ -7,7 +7,6 @@ import {
   SiInstagram,
   SiLinkedin,
   SiTelegram,
-  SiThreads,
 } from "react-icons/si";
 
 export const archivo = Archivo({ subsets: ["latin"] });
@@ -68,11 +67,6 @@ export const SOCIAL_LIST: ISocial[] = [
     icon: SiTelegram,
     url: "https://t.me/zulfianfreza",
   },
-  // {
-  //   name: "Threads",
-  //   icon: SiThreads,
-  //   url: "https://www.threads.net/@zulfianfreza",
-  // },
 ];
 
 export const transition: Transition = {

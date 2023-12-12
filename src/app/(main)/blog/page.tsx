@@ -26,7 +26,7 @@ export default function BlogPage() {
           </h1>
           <div className="flex flex-col gap-4">
             <p>
-              Random Rambles: Navigating the Uncharted
+              Random Thoughts: Navigating the Uncharted
               <br className=" hidden lg:block" /> Territories of Tech, Life, and
               Everything In Between
             </p>

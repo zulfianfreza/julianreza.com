@@ -65,16 +65,20 @@ export default function Hero() {
         </div>
       </div>
       <div className=" mt-8 flex w-full items-center justify-start gap-6">
-        <button className=" group relative flex h-14 items-center justify-center overflow-hidden rounded-full bg-black px-8 dark:bg-white">
+        <Link
+          href="mailto:zulfian.025fr@gmail.com"
+          className=" group relative flex h-14 items-center justify-center overflow-hidden rounded-full bg-black px-8 dark:bg-white"
+        >
           <p className="flex items-center gap-2 text-white transition-all duration-500 group-hover:-translate-y-6 group-hover:opacity-0 dark:text-black">
             Let&apos;s Connect
           </p>
           <p className="absolute flex translate-y-6 items-center gap-2 text-white opacity-0 transition-all duration-500 group-hover:translate-y-0 group-hover:opacity-100 dark:text-black">
             Let&apos;s Connect
           </p>
-        </button>
+        </Link>
         <Link
-          href="/"
+          href="https://drive.google.com/file/d/1ZE-REowUDG-3Qxoz_6J_ECCWS1d0JiO-/view?usp=drive_link"
+          target="_blank"
           className=" group relative flex flex-col gap-2 overflow-hidden py-1.5 text-black dark:text-white"
         >
           <span className=" transition-all duration-500 group-hover:-translate-y-6 group-hover:opacity-0">

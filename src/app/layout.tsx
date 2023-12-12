@@ -7,7 +7,14 @@ import { heebo } from "@/lib/constants";
 
 export const metadata: Metadata = {
   title: "Julian Reza",
-  description: "My portfolio website that includes all my projects.",
+  description: "Hi, i'm julian. I'm a Fullstack Developer.",
+  icons: "/images/logo-black.png",
+  openGraph: {
+    title: "Julian Reza",
+    description: "Hi, i'm julian. I'm a fullstack developer.",
+    images: ["/images/og-image.png"],
+  },
+  twitter: { card: "summary_large_image", images: ["/images/og-image.png"] },
 };
 
 export default function RootLayout({

@@ -6,6 +6,7 @@ import { GoArrowDownLeft, GoArrowRight } from "react-icons/go";
 import Container from "../container";
 import PostItem from "../post-item";
 import { archivo } from "@/lib/constants";
+import Link from "next/link";
 
 interface PostsProps {
   posts: IPost[];
@@ -47,14 +48,17 @@ export default function Posts({ posts }: PostsProps) {
       </div>
 
       <div className=" mt-8 flex justify-center">
-        <button className=" group relative flex h-14 items-center justify-center overflow-hidden rounded-full bg-black px-8 dark:bg-white">
+        <Link
+          href="/blog"
+          className=" group relative flex h-14 items-center justify-center overflow-hidden rounded-full bg-black px-8 dark:bg-white"
+        >
           <p className="flex items-center gap-2 text-white transition-all duration-500 group-hover:-translate-y-6 group-hover:opacity-0 dark:text-black">
             See all posts. <GoArrowRight />
           </p>
           <p className="absolute flex translate-y-6 items-center gap-2 text-white opacity-0 transition-all duration-500 group-hover:translate-y-0 group-hover:opacity-100 dark:text-black">
             See all posts. <GoArrowRight />
           </p>
-        </button>
+        </Link>
       </div>
     </Container>
   );

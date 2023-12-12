@@ -41,14 +41,19 @@ export default async function ProjectPage({ params }: ProjectPageParams) {
   return (
     <Container className=" mx-auto min-h-screen w-full max-w-5xl pt-24 lg:pt-24">
       <MotionContainer>
-        <h1 className={cn(archivo.className, "text-[56px] leading-none")}>
+        <h1
+          className={cn(
+            archivo.className,
+            "text-[24px] font-medium leading-tight tracking-tight lg:text-[36px]",
+          )}
+        >
           {project.title}
         </h1>
-        <p className=" mt-2">{project.summary}</p>
+        <p className="">{project.summary}</p>
         <div className="mt-4 flex gap-4">
           <Link
             href={project.repo}
-            target="_blank"
+            target={project.repo && project.repo != "" ? "_blank" : ""}
             className="flex items-center gap-1"
           >
             {/* <SiGithub /> */}
