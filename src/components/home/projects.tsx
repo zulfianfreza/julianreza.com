@@ -1,14 +1,13 @@
 "use client";
 
 import { IProject } from "@/@types";
-import { archivo, transition } from "@/lib/constants";
+import { archivo } from "@/lib/constants";
 import { cn } from "@/lib/utils";
-import { motion } from "framer-motion";
+import Link from "next/link";
 import { GoArrowDownRight, GoArrowRight } from "react-icons/go";
 import { Element } from "react-scroll";
 import Container from "../container";
 import ProjectItem from "../project-item";
-import Link from "next/link";
 
 interface ProjectsProps {
   projects: IProject[];
@@ -28,19 +27,15 @@ export default function Projects({ projects }: ProjectsProps) {
             <GoArrowDownRight size={20} className="hidden lg:block" />
           </div>
           <div className="flex">
-            <motion.h1
-              // initial={{ opacity: 0, y: 100 }}
-              // whileInView={{ opacity: 1, y: 0 }}
-              // viewport={{ once: false }}
-              transition={transition}
+            <h1
               className={cn(
-                " text-right text-[56px] font-medium leading-none tracking-tight md:text-[96px] lg:text-[156px]",
+                " text-left text-[56px] font-medium leading-none tracking-tight md:text-[96px] lg:text-right lg:text-[156px]",
                 archivo.className,
               )}
             >
-              Project <br />
-              {/* <span className=" mr-60">Project</span> */}
-            </motion.h1>
+              Selected <br className=" hidden lg:block" />
+              Projects
+            </h1>
           </div>
         </div>
         <div className="mt-8 flex flex-col gap-8 lg:gap-16">
