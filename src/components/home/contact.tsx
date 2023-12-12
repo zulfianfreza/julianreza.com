@@ -33,7 +33,7 @@ export default function Contact() {
         </div>
 
         <div className=" w-full lg:w-[calc(100%/2+72px)]">
-          <div className="grid grid-cols-2 gap-4">
+          <div className="grid grid-cols-1 gap-4 lg:grid-cols-2">
             <div className=" space-y-2">
               <label htmlFor="">What&apos;s your name?</label>
               <input
