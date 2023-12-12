@@ -1,12 +1,12 @@
 import Providers from "@/components/providers";
+import { heebo } from "@/lib/constants";
 import { cn } from "@/lib/utils";
 import type { Metadata } from "next";
-import { Noto_Sans } from "next/font/google";
 import "./globals.css";
-import { heebo } from "@/lib/constants";
 
 export const metadata: Metadata = {
   title: "Julian Reza",
+  metadataBase: new URL("https://julianreza.com/"),
   description: "Hi, i'm julian. I'm a Fullstack Developer.",
   icons: "/images/logo-black.png",
   openGraph: {

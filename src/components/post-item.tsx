@@ -14,15 +14,19 @@ interface PostItemProps {
 
 export default function PostItem({ post }: PostItemProps) {
   return (
-    <Link href={`/blog/${post?.slug}`} className=" w-full">
-      <div className=" group relative aspect-[16/10] w-full overflow-hidden rounded-xl ">
+    <div className=" flex w-full flex-col">
+      <Link
+        href={`/blog/${post?.slug}`}
+        className=" group relative aspect-[16/10] w-full overflow-hidden rounded-xl "
+      >
         <Image
           src={post?.thumbnail as string}
           fill
           alt=""
+          sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
           className=" object-cover object-center transition-all duration-500 group-hover:scale-[1.05]"
         />
-      </div>
+      </Link>
       <Link
         href={`/blog/${post?.slug}`}
         className={cn(
@@ -41,6 +45,6 @@ export default function PostItem({ post }: PostItemProps) {
         </p>
         <p className=" text-sm">{getReadingTime(post.content)} min</p>
       </div>
-    </Link>
+    </div>
   );
 }

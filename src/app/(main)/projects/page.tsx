@@ -26,6 +26,7 @@ export default function ProjectsPage() {
                   className=" object-cover"
                   fill
                   alt=""
+                  sizes="100%"
                 />
               </div>
               <h1

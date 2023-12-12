@@ -35,6 +35,7 @@ export default function AboutPage() {
                   className=" object-cover"
                   fill
                   alt=""
+                  sizes="100%"
                 />
               </div>
               <h1

@@ -39,6 +39,7 @@ export default function ProjectItem({
               src={project.image ?? ""}
               fill
               alt=""
+              sizes="100%"
               className=" object-cover object-center transition-all duration-500 group-hover:scale-[1.025] group-hover:blur-lg group-hover:brightness-75"
             />
             <div className=" absolute left-1/2 top-1/2 flex aspect-square w-[100px] -translate-x-1/2 -translate-y-1/2 scale-0 items-center justify-center rounded-full bg-white text-black transition-all delay-75 duration-500 group-hover:scale-100">
