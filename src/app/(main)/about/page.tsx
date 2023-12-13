@@ -70,34 +70,6 @@ export default function AboutPage() {
             <Educations />
             <Skills />
           </div>
-          <div className=" w-96">
-            {/* <div className="flex flex-col leading-relaxed">
-              <p>
-                Github:{" "}
-                <Link
-                  href="https://github.com/zulfianfreza"
-                  className=" font-medium"
-                >
-                  https://github.com/zulfianfreza
-                </Link>
-              </p>
-              <p>
-                Website:{" "}
-                <Link href="https://julianreza.com" className=" font-medium">
-                  https://julianreza.com/
-                </Link>
-              </p>
-              <p>
-                Linkedin:{" "}
-                <Link
-                  href="https://www.linkedin.com/in/zulfian-fachru-reza/"
-                  className=" font-medium"
-                >
-                  https://www.linkedin.com/in/zulfian-fachru-reza/
-                </Link>
-              </p>
-            </div> */}
-          </div>
         </div>
       </MotionContainer>
     </Container>

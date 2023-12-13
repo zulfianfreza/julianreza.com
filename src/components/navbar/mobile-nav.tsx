@@ -5,9 +5,20 @@ import { MENU, archivo } from "@/lib/constants";
 import { cn } from "@/lib/utils";
 import { AnimatePresence, Variants, motion } from "framer-motion";
 import Link from "next/link";
+import { usePathname } from "next/navigation";
+import { useEffect } from "react";
 
 export default function MobileNav() {
   const { isOpen, onClose } = useMenuOpen();
+  const pathname = usePathname();
+  const clear = () => {
+    onClose();
+    document.body.style.overflow = "";
+  };
+  useEffect(() => {
+    clear();
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [pathname]);
   const menuVars: Variants = {
     initial: {
       scaleY: 0,

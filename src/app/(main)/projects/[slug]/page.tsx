@@ -75,7 +75,7 @@ export default async function ProjectPage({ params }: ProjectPageParams) {
               // data-scroll-section
             >
               <div
-                className=" relative h-full w-full  overflow-hidden rounded-[0px]  bg-neutral-800 p-10 "
+                className=" relative h-full w-full  overflow-hidden rounded-[16px]  bg-neutral-800 p-10 "
                 data-scroll
                 data-scroll-speed={0.5}
               >
@@ -104,13 +104,11 @@ export default async function ProjectPage({ params }: ProjectPageParams) {
         <MDXContent content={content} />
 
         <div className=" mt-8">
-          {/* <h1 className="">Tech Stack</h1> */}
-          <div className="mt-2 flex flex-row flex-wrap gap-x-2.5">
-            {project.stack.map((tech, i) => (
-              <p className=" leading-relaxed" key={i}>
-                #{tech}
-              </p>
-            ))}
+          <h1 className="">Tech Stack</h1>
+          <div className="flex flex-row flex-wrap gap-x-2.5">
+            {/* {project.stack.map((tech, i) => ( */}
+            <p className=" leading-relaxed">{project.stack.join(", ")}</p>
+            {/* ))} */}
           </div>
         </div>
       </MotionContainer>

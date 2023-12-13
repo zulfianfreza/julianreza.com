@@ -36,13 +36,14 @@ export default function PostItem({ post }: PostItemProps) {
       >
         {post?.title}
       </Link>
-      <div className=" mt-1 flex justify-between">
+      <div className=" mt-1 flex items-center gap-2">
         <p className=" text-sm">
           {format(
             post?.date ? new Date(post?.date) : new Date(),
             "dd MMM, yyyy",
           )}
         </p>
+        <p>•</p>
         <p className=" text-sm">{getReadingTime(post.content)} min</p>
       </div>
     </div>

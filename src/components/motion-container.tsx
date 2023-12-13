@@ -14,8 +14,7 @@ export default function MotionContainer({
       animate={{ opacity: 1, y: 0 }}
       transition={{
         ...transition,
-        delay: 0.5,
-        duration: 1.2,
+        duration: 1,
         ease: [0.22, 1, 0.36, 1],
       }}
     >
